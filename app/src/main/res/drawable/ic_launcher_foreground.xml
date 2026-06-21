@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+        LEDGER BOOK — scaled to 67% of canvas, centered at (54,54)
+        Layers (back to front): page-stack → cover → spine → details
+    -->
+
+    <!-- Page stack: right edge thickness (accent_purple tones — contrasts against blue bg) -->
+    <path
+        android:fillColor="#7B2FF7"
+        android:pathData="M67,31 L71,31 Q74,31 74,34 L74,74 Q74,77 71,77 L67,77 Z" />
+    <path
+        android:fillColor="#9D6FFF"
+        android:pathData="M65,31 L68,31 L68,77 L65,77 Z" />
+
+    <!-- Main cover (white) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M41,31 L66,31 Q68,31 68,34 L68,74 Q68,77 66,77 L41,77 Z" />
+
+    <!-- Spine (deep_purple from app theme) -->
+    <path
+        android:fillColor="#3A0CA3"
+        android:pathData="M35,31 Q33,31 33,34 L33,74 Q33,77 35,77 L41,77 L41,31 Z" />
+
+    <!-- Spine-to-cover crease -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C8CCFF"
+        android:strokeWidth="1.0"
+        android:pathData="M41,31 L41,77" />
+
+    <!-- Spine inner highlight -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.15"
+        android:pathData="M37,32 L37,76" />
+
+    <!-- Header band (light lavender strip at top of cover) -->
+    <path
+        android:fillColor="#ECF0FF"
+        android:pathData="M41,31 L66,31 Q68,31 68,34 L68,39 L41,39 Z" />
+
+    <!-- Header band bottom rule -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C0C7FF"
+        android:strokeWidth="1.0"
+        android:pathData="M41,39 L68,39" />
+
+    <!-- Ledger ruled lines (5 rows) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D2D6FF"
+        android:strokeWidth="1.2"
+        android:pathData="M44,46 L65,46" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D2D6FF"
+        android:strokeWidth="1.2"
+        android:pathData="M44,52 L65,52" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D2D6FF"
+        android:strokeWidth="1.2"
+        android:pathData="M44,58 L65,58" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D2D6FF"
+        android:strokeWidth="1.2"
+        android:pathData="M44,64 L65,64" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D2D6FF"
+        android:strokeWidth="1.2"
+        android:pathData="M44,70 L65,70" />
+
+    <!-- Vertical column divider -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C8CCFF"
+        android:strokeWidth="1.0"
+        android:pathData="M56,39 L56,75" />
+
+    <!-- ── MATH LEDGER ENTRIES (primary blue on white cover) ── -->
+
+    <!-- Square bracket [ grouping rows 1-2 as addends -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44.5,40 L43,40 L43,51 L44.5,51" />
+
+    <!-- Row 1: left-col description dash + right-col amount -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M46,42.5 L53,42.5" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M58,42.5 L64,42.5" />
+
+    <!-- Row 2: left-col description dash + right-col amount (shorter = different value) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M46,49 L52,49" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M58,49 L62,49" />
+
+    <!-- Row 3: + sign in left column -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.3"
+        android:strokeLineCap="round"
+        android:pathData="M47.5,55 L53.5,55" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.3"
+        android:strokeLineCap="round"
+        android:pathData="M50.5,52.5 L50.5,57.5" />
+
+    <!-- Row 4: = sign in left column -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M47,60.5 L54,60.5" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M47,62.5 L54,62.5" />
+
+    <!-- Row 5: total amount in right column (longest line = sum is bigger) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4361EE"
+        android:strokeWidth="1.3"
+        android:strokeLineCap="round"
+        android:pathData="M57.5,67 L65.5,67" />
+
+</vector>

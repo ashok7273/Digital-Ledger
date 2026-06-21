@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <TextView
+        android:id="@+id/tvTxnDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="yyyy-MM-dd HH:mm:ss"
+        android:textSize="15sp"
+        android:textColor="@color/label_gray"/>
+
+    <TextView
+        android:id="@+id/tvTxnAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+₹0.00"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="end"/>
+
+</LinearLayout>

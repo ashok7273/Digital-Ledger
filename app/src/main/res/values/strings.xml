@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VLedger</string>
+    <string name="prompt_business_type">Business Type</string>
+    <string name="prompt_business_category">Business Category</string>
+</resources>

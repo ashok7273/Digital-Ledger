@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#16192C</color>          <!-- Near-black – main body text -->
+    <color name="label_gray">#6E7191</color>            <!-- Secondary / label text -->
+    <color name="hint_gray">#A0A3BD</color>             <!-- Placeholder / hint text -->
+    <color name="text_on_primary_muted">#C0CCFF</color> <!-- Dim text on header -->
+
+    <!-- Brand -->
+    <color name="primary_blue">#4361EE</color>          <!-- Vibrant blue primary -->
+    <color name="primary_blue_light">#EDF1FD</color>    <!-- Tinted button bg -->
+    <color name="deep_purple">#3A0CA3</color>           <!-- Accent dark -->
+    <color name="accent_purple">#7B2FF7</color>         <!-- Gradient end / highlight -->
+    <color name="accent_lavender">#EBE2FF</color>       <!-- Tinted bg areas -->
+    <color name="card_gradient">#F2EDFF</color>         <!-- Balance card lavender bg -->
+
+    <!-- Surfaces / backgrounds -->
+    <color name="page_bg">#F8F9FE</color>               <!-- Screen background – soft cool gray -->
+    <color name="surface_dim">#F9F9FB</color>           <!-- Input bg -->
+    <color name="lightStripeGray">#F5F5F5</color>       <!-- Alternating row stripe -->
+
+    <!-- Dividers -->
+    <color name="divider_gray">#E8E8EF</color>          <!-- Standard section divider -->
+    <color name="divider_light">#E0E0E0</color>         <!-- Light divider / stroke -->
+
+    <!-- Transaction / balance states -->
+    <color name="color_received">#0EAD69</color>        <!-- Green – money received / positive -->
+    <color name="color_given">#F44336</color>           <!-- Red – money given / negative / due -->
+    <color name="color_error">#FF0000</color>           <!-- Inline validation error -->
+
+    <!-- Stat card accents -->
+    <color name="stat_blue_bg">#EDF2FF</color>          <!-- Customers card tint -->
+    <color name="stat_red_bg">#FFF0EF</color>           <!-- Due card tint -->
+    <color name="stat_green_bg">#EDFDF5</color>         <!-- Advance card tint -->
+
+    <!-- Gradient drawable support -->
+    <color name="bg_gradient_start">#F7F7FF</color>
+    <color name="header_gradient_start">#4361EE</color>
+    <color name="header_gradient_end">#7B2FF7</color>
+</resources>

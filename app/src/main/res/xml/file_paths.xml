@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- For files in app's external files root directory -->
+    <external-files-path
+        name="external_files"
+        path="." />
+
+    <!-- For files in app's private Documents dir -->
+    <external-files-path
+        name="pdf_docs"
+        path="Documents/" />
+
+    <!-- For files in the public "myapp" folder at root of internal storage -->
+    <external-path
+        name="myapp_folder"
+        path="myapp/" />
+
+    <!-- For camera photos in app's Pictures directory -->
+    <external-files-path
+        name="pictures"
+        path="Pictures/" />
+
+    <!-- For internal app files -->
+    <files-path
+        name="internal_files"
+        path="." />
+
+    <!-- For cache files -->
+    <external-cache-path
+        name="cache"
+        path="." />
+</paths>

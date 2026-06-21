@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg">
+
+    <!-- GRADIENT HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_rounded"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="34dp"
+        android:paddingBottom="18dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/header_icon_bg"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            app:tint="@color/primary_blue"
+            android:contentDescription="Back"
+            android:padding="7dp"/>
+
+        <LinearLayout
+            android:id="@+id/profileViewBlock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/tvCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:maxWidth="200dp"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click To View Profile"
+                android:textSize="11sp"
+                android:textColor="@color/text_on_primary_muted"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/header_icon_bg"
+            app:srcCompat="@drawable/ic_call_24"
+            app:tint="@color/primary_blue"
+            android:contentDescription="Call"
+            android:padding="4dp"/>
+
+        <ImageButton
+            android:id="@+id/btnReport"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/header_icon_bg"
+            app:srcCompat="@drawable/ic_report_24"
+            app:tint="@color/primary_blue"
+            android:contentDescription="Report"
+            android:padding="4dp"/>
+    </LinearLayout>
+
+    <!-- BALANCE STRIP -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <TextView
+                android:id="@+id/tvBalanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Balance"
+                android:textColor="@color/label_gray"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/tvBalanceAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0.00"
+                android:textColor="@color/deep_purple"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:fontFamily="sans-serif-black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ACTION BUTTONS ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReceived"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Received"
+            android:backgroundTint="@color/color_received"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:layout_marginEnd="5dp"
+            app:cornerRadius="12dp"
+            android:fontFamily="sans-serif-medium"
+            app:iconGravity="textStart"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGiven"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Given"
+            android:backgroundTint="@color/color_given"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:cornerRadius="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTransactionHistory"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="History"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:backgroundTint="@color/primary_blue_light"
+            android:textColor="@color/primary_blue"
+            app:cornerRadius="12dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+    </LinearLayout>
+
+    <!-- RECENT TRANSACTIONS -->
+    <TextView
+        android:id="@+id/tvRecentTxnsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RECENT TRANSACTIONS"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/label_gray"
+        android:letterSpacing="0.12"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="6dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="@color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRecentTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
